@@ -1,8 +1,10 @@
-// Le prix du voyage aux Caraïbes de Joe
-let price = 1499
+var money = 0.0
 
-// Le bénéfice quotidien de Joe avec sa ferme
-let dailyBenefit = 10
+for _ in 1...30 {
+    // Joe nourrit les vaches
+    money -= 4
+    // Joe vends son lait
+    money += 30 * 0.50
+}
 
-// Le nombre de jours pendant lesquelles Joe doit économiser
-let result = price / dailyBenefit
+print("\(money) €")
